@@ -8,3 +8,8 @@ then
   alias ll="gls -l --color"
   alias la='gls -A --color'
 fi
+
+# General
+alias ls='ls -la'
+alias zshrc='edit ~/.zshrc'
+alias edit='atom'

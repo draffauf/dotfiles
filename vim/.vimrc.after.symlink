@@ -1,0 +1,40 @@
+" Themes
+colorscheme lucius
+LuciusDarkHighContrast
+set guifont=Monaco:h13
+
+" Remove chrome
+set guioptions-=T               " Removes top toolbar
+set guioptions-=r               " Removes right hand scroll bar
+set go-=L                       " Removes left hand scroll bar
+
+" Buffers
+set hidden                      " Allow hidden, unsaved buffers to prevent forced saves
+let g:ctrlp_show_hidden = 1     " CTRL-P finds hidden files
+let g:NERDTreeWinPos = "right"  " Load NERDTree on the right by default
+
+" Editing
+autocmd User Rails let b:surround_{char2nr('-')} = "<% \r %>" " displays <% %> correctly
+:set cpoptions+=$               " puts a $ marker for the end of words/lines in cw/c$ commands
+set backspace=indent,eol,start  " allow backspacing over everything in insert mode
+set whichwrap+=<,>,h,l          " wrap at the beginning and end of lines
+" nnoremap ; :                    " prevent having to hold shift to bring up commands
+
+" Turn auto backup off
+set nobackup
+set nowb
+set noswapfile
+
+" Matching brackets
+" set showmatch                   " Show matching brackets when text indicator is over them
+set mat=2                       " How many tenths of a second to blink when matching brackets
+
+" Feedback
+set visualbell                  " don't beep
+set noerrorbells                " don't beep
+
+" Smart way to move between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l

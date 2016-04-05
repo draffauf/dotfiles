@@ -1,0 +1,5 @@
+alias utorders='cd ~/Code/UserTesting/orders'
+alias utngrok='ngrok start totoro123'
+alias utsidekiq='zeus sidekiq -C config/sidekiq.yml'
+alias utdistribute='zeus rake ut:tester:distribute_session email=david@davidraffauf.com'
+alias utupdatedb='zeus rake ut:db:update env=production skip=available_sessions,versions'
